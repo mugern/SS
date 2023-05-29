@@ -18,13 +18,11 @@ namespace SS.DB
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<ClassLesson> ClassLesson { get; set; }
+        public virtual DbSet<ApplicationTB> ApplicationTBs { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Class>()
-                .HasMany(e => e.ClassLesson)
-                .WithRequired(e => e.Class)
-                .WillCascadeOnDelete(false);
+            
 
             modelBuilder.Entity<Lessons>()
                 .HasMany(e => e.ClassLesson)

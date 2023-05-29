@@ -121,6 +121,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "GuestMenu";
             this.Text = "GuestMenu";
             this.panel1.ResumeLayout(false);

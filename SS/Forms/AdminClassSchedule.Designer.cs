@@ -59,18 +59,11 @@
             this.bMondayPL = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.BMinimize = new System.Windows.Forms.Button();
-            this.BMax = new System.Windows.Forms.Button();
             this.BClose = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.BEdit = new System.Windows.Forms.Button();
             this.BReturn = new System.Windows.Forms.Button();
-            this.LPMonday.SuspendLayout();
-            this.LPFriday.SuspendLayout();
-            this.LPThursday.SuspendLayout();
-            this.LPWednesday.SuspendLayout();
-            this.LPTuesday.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -85,11 +78,10 @@
             // 
             this.LPMonday.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LPMonday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(65)))));
-            this.LPMonday.Controls.Add(this.LMonday);
-            this.LPMonday.Location = new System.Drawing.Point(14, 52);
+            this.LPMonday.Location = new System.Drawing.Point(14, 58);
             this.LPMonday.Name = "LPMonday";
             this.LPMonday.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.LPMonday.Size = new System.Drawing.Size(203, 513);
+            this.LPMonday.Size = new System.Drawing.Size(203, 507);
             this.LPMonday.TabIndex = 0;
             // 
             // LMonday
@@ -97,7 +89,7 @@
             this.LMonday.AutoSize = true;
             this.LMonday.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold);
             this.LMonday.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LMonday.Location = new System.Drawing.Point(13, 0);
+            this.LMonday.Location = new System.Drawing.Point(27, 27);
             this.LMonday.Name = "LMonday";
             this.LMonday.Size = new System.Drawing.Size(113, 28);
             this.LMonday.TabIndex = 0;
@@ -108,7 +100,7 @@
             this.LFriday.AutoSize = true;
             this.LFriday.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold);
             this.LFriday.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LFriday.Location = new System.Drawing.Point(13, 0);
+            this.LFriday.Location = new System.Drawing.Point(851, 27);
             this.LFriday.Name = "LFriday";
             this.LFriday.Size = new System.Drawing.Size(85, 28);
             this.LFriday.TabIndex = 0;
@@ -118,11 +110,10 @@
             // 
             this.LPFriday.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LPFriday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(65)))));
-            this.LPFriday.Controls.Add(this.LFriday);
-            this.LPFriday.Location = new System.Drawing.Point(838, 52);
+            this.LPFriday.Location = new System.Drawing.Point(838, 58);
             this.LPFriday.Name = "LPFriday";
             this.LPFriday.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.LPFriday.Size = new System.Drawing.Size(203, 513);
+            this.LPFriday.Size = new System.Drawing.Size(203, 507);
             this.LPFriday.TabIndex = 4;
             // 
             // LThursday
@@ -130,7 +121,7 @@
             this.LThursday.AutoSize = true;
             this.LThursday.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold);
             this.LThursday.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LThursday.Location = new System.Drawing.Point(13, 0);
+            this.LThursday.Location = new System.Drawing.Point(645, 27);
             this.LThursday.Name = "LThursday";
             this.LThursday.Size = new System.Drawing.Size(83, 28);
             this.LThursday.TabIndex = 0;
@@ -140,11 +131,10 @@
             // 
             this.LPThursday.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LPThursday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(65)))));
-            this.LPThursday.Controls.Add(this.LThursday);
-            this.LPThursday.Location = new System.Drawing.Point(632, 52);
+            this.LPThursday.Location = new System.Drawing.Point(632, 58);
             this.LPThursday.Name = "LPThursday";
             this.LPThursday.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.LPThursday.Size = new System.Drawing.Size(203, 513);
+            this.LPThursday.Size = new System.Drawing.Size(203, 507);
             this.LPThursday.TabIndex = 3;
             // 
             // LWednesday
@@ -152,7 +142,7 @@
             this.LWednesday.AutoSize = true;
             this.LWednesday.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold);
             this.LWednesday.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LWednesday.Location = new System.Drawing.Point(13, 0);
+            this.LWednesday.Location = new System.Drawing.Point(439, 27);
             this.LWednesday.Name = "LWednesday";
             this.LWednesday.Size = new System.Drawing.Size(58, 28);
             this.LWednesday.TabIndex = 0;
@@ -162,11 +152,10 @@
             // 
             this.LPWednesday.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LPWednesday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(65)))));
-            this.LPWednesday.Controls.Add(this.LWednesday);
-            this.LPWednesday.Location = new System.Drawing.Point(426, 52);
+            this.LPWednesday.Location = new System.Drawing.Point(426, 58);
             this.LPWednesday.Name = "LPWednesday";
             this.LPWednesday.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.LPWednesday.Size = new System.Drawing.Size(203, 513);
+            this.LPWednesday.Size = new System.Drawing.Size(203, 507);
             this.LPWednesday.TabIndex = 2;
             // 
             // LTuesday
@@ -174,7 +163,7 @@
             this.LTuesday.AutoSize = true;
             this.LTuesday.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold);
             this.LTuesday.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LTuesday.Location = new System.Drawing.Point(13, 0);
+            this.LTuesday.Location = new System.Drawing.Point(233, 27);
             this.LTuesday.Name = "LTuesday";
             this.LTuesday.Size = new System.Drawing.Size(87, 28);
             this.LTuesday.TabIndex = 0;
@@ -184,22 +173,20 @@
             // 
             this.LPTuesday.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LPTuesday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(65)))));
-            this.LPTuesday.Controls.Add(this.LTuesday);
-            this.LPTuesday.Location = new System.Drawing.Point(220, 52);
+            this.LPTuesday.Location = new System.Drawing.Point(220, 58);
             this.LPTuesday.Name = "LPTuesday";
             this.LPTuesday.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.LPTuesday.Size = new System.Drawing.Size(203, 513);
+            this.LPTuesday.Size = new System.Drawing.Size(203, 507);
             this.LPTuesday.TabIndex = 1;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(65)))));
-            this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(1044, 52);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(1044, 58);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(203, 513);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(203, 507);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
             // label1
@@ -207,7 +194,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(20, 0);
+            this.label1.Location = new System.Drawing.Point(1061, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 28);
             this.label1.TabIndex = 0;
@@ -219,6 +206,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.LFriday);
+            this.panel1.Controls.Add(this.LThursday);
+            this.panel1.Controls.Add(this.LWednesday);
+            this.panel1.Controls.Add(this.LTuesday);
+            this.panel1.Controls.Add(this.LMonday);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel6);
@@ -259,6 +252,7 @@
             this.bFridayMIN.TabIndex = 16;
             this.bFridayMIN.UseVisualStyleBackColor = true;
             this.bFridayMIN.Visible = false;
+            this.bFridayMIN.Click += new System.EventHandler(this.bFridayMIN_Click);
             // 
             // bFridayPL
             // 
@@ -297,6 +291,7 @@
             this.bThursdayMIN.TabIndex = 14;
             this.bThursdayMIN.UseVisualStyleBackColor = true;
             this.bThursdayMIN.Visible = false;
+            this.bThursdayMIN.Click += new System.EventHandler(this.bThursdayMIN_Click);
             // 
             // bThursdayPL
             // 
@@ -335,6 +330,7 @@
             this.bWednesdayMIN.TabIndex = 12;
             this.bWednesdayMIN.UseVisualStyleBackColor = true;
             this.bWednesdayMIN.Visible = false;
+            this.bWednesdayMIN.Click += new System.EventHandler(this.bWednesdayMIN_Click);
             // 
             // bWednesdayPL
             // 
@@ -373,6 +369,7 @@
             this.bTuesdayMIN.TabIndex = 10;
             this.bTuesdayMIN.UseVisualStyleBackColor = true;
             this.bTuesdayMIN.Visible = false;
+            this.bTuesdayMIN.Click += new System.EventHandler(this.bTuesdayMIN_Click);
             // 
             // bTuesdayPL
             // 
@@ -431,14 +428,12 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.panel2.Controls.Add(this.BMinimize);
-            this.panel2.Controls.Add(this.BMax);
             this.panel2.Controls.Add(this.BClose);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1255, 24);
             this.panel2.TabIndex = 6;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // BMinimize
@@ -448,28 +443,13 @@
             this.BMinimize.FlatAppearance.BorderSize = 0;
             this.BMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BMinimize.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BMinimize.Location = new System.Drawing.Point(1186, -3);
+            this.BMinimize.Location = new System.Drawing.Point(1206, -3);
             this.BMinimize.Name = "BMinimize";
             this.BMinimize.Size = new System.Drawing.Size(20, 27);
             this.BMinimize.TabIndex = 13;
             this.BMinimize.Text = "O";
             this.BMinimize.UseVisualStyleBackColor = true;
             this.BMinimize.Click += new System.EventHandler(this.BMinimize_Click);
-            // 
-            // BMax
-            // 
-            this.BMax.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.BMax.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BMax.FlatAppearance.BorderSize = 0;
-            this.BMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BMax.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BMax.Location = new System.Drawing.Point(1209, -3);
-            this.BMax.Name = "BMax";
-            this.BMax.Size = new System.Drawing.Size(20, 27);
-            this.BMax.TabIndex = 12;
-            this.BMax.Text = "O";
-            this.BMax.UseVisualStyleBackColor = true;
-            this.BMax.Click += new System.EventHandler(this.BMax_Click);
             // 
             // BClose
             // 
@@ -507,10 +487,11 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(180, 24);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 36);
+            this.button1.Size = new System.Drawing.Size(243, 36);
             this.button1.TabIndex = 2;
             this.button1.Text = "Добавить новый предмет";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // BEdit
             // 
@@ -541,6 +522,7 @@
             this.BReturn.TabIndex = 0;
             this.BReturn.Text = "Вернуться";
             this.BReturn.UseVisualStyleBackColor = false;
+            this.BReturn.Click += new System.EventHandler(this.BReturn_Click);
             // 
             // AdminClassSchedule
             // 
@@ -552,19 +534,8 @@
             this.Controls.Add(this.panel1);
             this.Name = "AdminClassSchedule";
             this.Text = "AdminClassSchedule";
-            this.LPMonday.ResumeLayout(false);
-            this.LPMonday.PerformLayout();
-            this.LPFriday.ResumeLayout(false);
-            this.LPFriday.PerformLayout();
-            this.LPThursday.ResumeLayout(false);
-            this.LPThursday.PerformLayout();
-            this.LPWednesday.ResumeLayout(false);
-            this.LPWednesday.PerformLayout();
-            this.LPTuesday.ResumeLayout(false);
-            this.LPTuesday.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
@@ -596,7 +567,6 @@
         private System.Windows.Forms.Button BReturn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button BMinimize;
-        private System.Windows.Forms.Button BMax;
         private System.Windows.Forms.Button BClose;
         private System.Windows.Forms.Button bMondayMIN;
         private System.Windows.Forms.Button bMondayPL;

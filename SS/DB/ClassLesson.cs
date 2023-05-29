@@ -28,12 +28,14 @@ namespace SS.DB
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Lesson_Number { get; set; }
 
-        public virtual Class Class { get; set; }
+        //public virtual Class Class { get; set; }
+       
         public int id { get; set; }
         public void SetValues(ClassLesson e_CL)
         {            
             ID_lessons = e_CL.ID_lessons;          
             Lesson_Number = e_CL.Lesson_Number;
+            
         }
         public virtual Lessons Lessons { get; set; }
     }

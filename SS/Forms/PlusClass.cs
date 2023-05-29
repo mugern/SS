@@ -15,13 +15,13 @@ namespace SS.Forms
 {
     public partial class PlusClass : Form
     {
-        AdminMenu menu;
+        AdminMenu mene;
         public PlusClass(AdminMenu menu)
         {
             InitializeComponent();
             this.Text = string.Empty;
             this.ControlBox = false;
-            this.menu = menu;
+            this.mene = menu;
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -35,7 +35,8 @@ namespace SS.Forms
             CL.ID_class= result + 1;
             CL.Number = textBox1.Text;
             CL.letter = textBox2.Text;
-            menu.plClass(CL);
+            mene.plClass(CL);
+            this.Close();
         }
 
         private void BMinimize_Click(object sender, EventArgs e)
@@ -45,7 +46,9 @@ namespace SS.Forms
 
         private void BClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            AdminMenu a = new AdminMenu();
+            a.Show();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -60,5 +63,7 @@ namespace SS.Forms
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        
     }
 }

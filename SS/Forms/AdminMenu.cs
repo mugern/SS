@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Net.NetworkInformation;
@@ -36,8 +37,7 @@ namespace SS.Forms
             }           
         }
         public void plClass(Class Clas)
-        {
-            
+        {                      
             DB.DB.db.Class.Add(Clas);
             DB.DB.db.SaveChanges();
             AdminMenu a = new AdminMenu();
@@ -92,8 +92,23 @@ namespace SS.Forms
         }
 
         private void Exit_Click(object sender, EventArgs e)
-        {
+        {            
             FormAuthorization a = new FormAuthorization();
+            a.Show();
+            this.Close();
+        }
+
+        private void BApplication_Click(object sender, EventArgs e)
+        {
+            string status = "";
+            AllFormApplication a = new AllFormApplication(status);
+            a.Show();
+            this.Close();
+        }
+
+        private void bclassMIN_Click(object sender, EventArgs e)
+        {
+            Deleting_class_Form a = new Deleting_class_Form();
             a.Show();
             this.Close();
         }

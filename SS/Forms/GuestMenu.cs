@@ -38,11 +38,12 @@ namespace SS.Forms
         private extern static void ReleaseCapture();
 
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
         public void test(object sender, EventArgs e)
         {
             string[] Fir = (sender as Button).Text.Split(' ');
-            AdminClassSchedule ACS = new AdminClassSchedule(Fir);
+            GuesClassSchedule ACS = new GuesClassSchedule(Fir);
             ACS.Show();
             this.Hide();
         }
@@ -61,12 +62,13 @@ namespace SS.Forms
 
         private void BClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            System.Windows.Forms.Application.Exit();
         }
 
         private void panel2_MouseDown(object sender, MouseEventArgs e)
         {
-
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

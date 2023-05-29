@@ -30,38 +30,44 @@ namespace SS
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
         private void Enter_Click(object sender, EventArgs e)
         {
-
-            List<User> users = DB.DB.db.User.ToList();
-            if (users.Find(a=>a.User_Name == textBoxLog.Text)!=null) //Проверка юзера
+            try
             {
-                if (DB.DB.db.User.ToList().Find(d => d.User_Password == textBoxPass.Text) != null)//Проверка пароля
+                List<User> users = DB.DB.db.User.ToList();
+                if (users.Find(a => a.User_Name == textBoxLog.Text) != null) //Проверка юзера
                 {
-                    User usersdsdsds = DB.DB.db.User.ToList().Find(d => d.User_Password == textBoxPass.Text);
-                    switch (comboBox1.SelectedIndex + 1)
+                    if (DB.DB.db.User.ToList().Find(d => d.User_Password == textBoxPass.Text) != null)//Проверка пароля
                     {
-                        case 1:
-                            if (usersdsdsds.User_Rols == 1)
-                            {
-                                AdminMenu A = new AdminMenu();
-                                A.Show();
-                                this.Hide();
-                            }
-                            break;
+                        User usersdsdsds = DB.DB.db.User.ToList().Find(d => d.User_Password == textBoxPass.Text);
+                        switch (comboBox1.SelectedIndex + 1)
+                        {
+                            case 1:
+                                if (usersdsdsds.User_Rols == 1)
+                                {
+                                    AdminMenu A = new AdminMenu();
+                                    A.Show();
+                                    this.Hide();
+                                }
+                                break;
                             case 2:
-                            if (usersdsdsds.User_Rols == 2)
-                            {
-                                TeacherMenu T = new TeacherMenu();
-                                T.Show();
+                                if (usersdsdsds.User_Rols == 2)
+                                {
+                                    TeacherMenu T = new TeacherMenu();
+                                    T.Show();
+                                    this.Hide();
+                                }
+                                break;
+                            default:
+                                GuestMenu G = new GuestMenu();
+                                G.Show();
                                 this.Hide();
-                            }
-                            break;
-                        default:
-                            GuestMenu G = new GuestMenu();
-                            G.Show();
-                            this.Hide();
-                            break;
-                    }                                        
+                                break;
+                        }
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка при попытки авторизации: " + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void butGuestEntrance_Click(object sender, EventArgs e)
@@ -79,7 +85,7 @@ namespace SS
 
         private void BClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            System.Windows.Forms.Application.Exit();
         }
        
 

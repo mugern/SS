@@ -82,6 +82,7 @@
             this.Controls.Add(this.TBlesson);
             this.Name = "Schedule";
             this.Size = new System.Drawing.Size(180, 70);
+            
             this.Click += new System.EventHandler(this.Schedule_Click);
             this.ResumeLayout(false);
             this.PerformLayout();

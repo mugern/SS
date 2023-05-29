@@ -34,6 +34,7 @@
             this.BMinimize = new System.Windows.Forms.Button();
             this.BClose = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BApplication = new System.Windows.Forms.Button();
             this.bclassMIN = new System.Windows.Forms.Button();
             this.bclassPL = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
@@ -94,6 +95,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panel1.Controls.Add(this.BApplication);
             this.panel1.Controls.Add(this.bclassMIN);
             this.panel1.Controls.Add(this.bclassPL);
             this.panel1.Controls.Add(this.Exit);
@@ -102,6 +104,22 @@
             this.panel1.Size = new System.Drawing.Size(800, 56);
             this.panel1.TabIndex = 8;
             // 
+            // BApplication
+            // 
+            this.BApplication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(65)))));
+            this.BApplication.Cursor = System.Windows.Forms.Cursors.Default;
+            this.BApplication.FlatAppearance.BorderSize = 0;
+            this.BApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BApplication.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold);
+            this.BApplication.ForeColor = System.Drawing.Color.White;
+            this.BApplication.Location = new System.Drawing.Point(3, 13);
+            this.BApplication.Name = "BApplication";
+            this.BApplication.Size = new System.Drawing.Size(192, 36);
+            this.BApplication.TabIndex = 11;
+            this.BApplication.Text = "Все заявки";
+            this.BApplication.UseVisualStyleBackColor = false;
+            this.BApplication.Click += new System.EventHandler(this.BApplication_Click);
+            // 
             // bclassMIN
             // 
             this.bclassMIN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bclassMIN.BackgroundImage")));
@@ -109,12 +127,13 @@
             this.bclassMIN.FlatAppearance.BorderSize = 0;
             this.bclassMIN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bclassMIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bclassMIN.Location = new System.Drawing.Point(12, 17);
+            this.bclassMIN.Location = new System.Drawing.Point(201, 19);
             this.bclassMIN.Name = "bclassMIN";
             this.bclassMIN.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bclassMIN.Size = new System.Drawing.Size(25, 25);
             this.bclassMIN.TabIndex = 10;
             this.bclassMIN.UseVisualStyleBackColor = true;
+            this.bclassMIN.Click += new System.EventHandler(this.bclassMIN_Click);
             // 
             // bclassPL
             // 
@@ -122,7 +141,7 @@
             this.bclassPL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bclassPL.FlatAppearance.BorderSize = 0;
             this.bclassPL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bclassPL.Location = new System.Drawing.Point(43, 17);
+            this.bclassPL.Location = new System.Drawing.Point(232, 19);
             this.bclassPL.Name = "bclassPL";
             this.bclassPL.Size = new System.Drawing.Size(25, 25);
             this.bclassPL.TabIndex = 9;
@@ -137,7 +156,7 @@
             this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold);
             this.Exit.ForeColor = System.Drawing.Color.White;
-            this.Exit.Location = new System.Drawing.Point(621, 6);
+            this.Exit.Location = new System.Drawing.Point(630, 12);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(167, 36);
             this.Exit.TabIndex = 1;
@@ -153,6 +172,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AdminMenu";
             this.Text = "AdminMenu";
             this.panel2.ResumeLayout(false);
@@ -171,5 +191,6 @@
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Button bclassMIN;
         private System.Windows.Forms.Button bclassPL;
+        private System.Windows.Forms.Button BApplication;
     }
 }

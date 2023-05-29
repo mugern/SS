@@ -55,12 +55,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Card\ApplicationCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Card\ApplicationCard.Designer.cs">
+      <DependentUpon>ApplicationCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Card\Schedule.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Card\Schedule.Designer.cs">
       <DependentUpon>Schedule.cs</DependentUpon>
     </Compile>
+    <Compile Include="DB\ApplicationTB.cs" />
     <Compile Include="DB\Class.cs" />
     <Compile Include="DB\ClassLesson.cs" />
     <Compile Include="DB\DB.cs" />
@@ -69,6 +76,12 @@
     <Compile Include="DB\Rols.cs" />
     <Compile Include="DB\sysdiagrams.cs" />
     <Compile Include="DB\User.cs" />
+    <Compile Include="Forms\AddLessons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddLessons.Designer.cs">
+      <DependentUpon>AddLessons.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminClassSchedule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,11 +94,35 @@
     <Compile Include="Forms\AdminMenu.Designer.cs">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AllFormApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AllFormApplication.Designer.cs">
+      <DependentUpon>AllFormApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\applicationTeaher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\applicationTeaher.Designer.cs">
+      <DependentUpon>applicationTeaher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Deleting_class_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Deleting_class_Form.Designer.cs">
+      <DependentUpon>Deleting_class_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GuesClassSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GuesClassSchedule.Designer.cs">
+      <DependentUpon>GuesClassSchedule.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\GuestMenu.cs">
       <SubType>Form</SubType>
@@ -99,6 +136,12 @@
     <Compile Include="Forms\PlusClass.Designer.cs">
       <DependentUpon>PlusClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TeacherClassScedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TeacherClassScedule.Designer.cs">
+      <DependentUpon>TeacherClassScedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TeacherMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,8 +150,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Card\ApplicationCard.resx">
+      <DependentUpon>ApplicationCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Card\Schedule.resx">
       <DependentUpon>Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddLessons.resx">
+      <DependentUpon>AddLessons.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminClassSchedule.resx">
       <DependentUpon>AdminClassSchedule.cs</DependentUpon>
@@ -116,14 +165,32 @@
     <EmbeddedResource Include="Forms\AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AllFormApplication.resx">
+      <DependentUpon>AllFormApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\applicationTeaher.resx">
+      <DependentUpon>applicationTeaher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Deleting_class_Form.resx">
+      <DependentUpon>Deleting_class_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GuesClassSchedule.resx">
+      <DependentUpon>GuesClassSchedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GuestMenu.resx">
       <DependentUpon>GuestMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PlusClass.resx">
       <DependentUpon>PlusClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TeacherClassScedule.resx">
+      <DependentUpon>TeacherClassScedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TeacherMenu.resx">
+      <DependentUpon>TeacherMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
